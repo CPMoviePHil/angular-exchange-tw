@@ -13,7 +13,7 @@ export class ExchangeDataByGovService {
     private http: HttpClient,
   ) { }
   getResponse(): Promise<object>{
-    const promise = this.http.get<any>(this.url).toPromise();
+    const promise = this.http.get<any>(this.url).toPromise(); // 0.2
     console.log(promise);
     return promise.then((data) => {
       this.data = data;

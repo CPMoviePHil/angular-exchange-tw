@@ -21,5 +21,8 @@ export class ShowExchangeTwComponent implements OnInit {
       }
     );
   }
-
+  // tslint:disable-next-line:typedef
+  getOur(){
+    console.log(this.data);
+  }
 }
